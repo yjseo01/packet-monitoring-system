@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SubscriberWebApp.bundle.scp.css"
+    },
+    {
+      "Id": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SubscriberWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SubscriberWebApp.props",
+      "PackagePath": "build\\SubscriberWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SubscriberWebApp.props",
+      "PackagePath": "buildMultiTargeting\\SubscriberWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SubscriberWebApp.props",
+      "PackagePath": "buildTransitive\\SubscriberWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

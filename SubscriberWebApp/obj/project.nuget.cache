@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WGclnUVkQhs=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\SubscriberWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seoyujin\\.nuget\\packages\\mqttnet\\4.3.7.1207\\mqttnet.4.3.7.1207.nupkg.sha512"
+  ],
+  "logs": []
+}
