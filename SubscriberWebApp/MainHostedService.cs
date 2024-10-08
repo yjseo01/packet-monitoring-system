@@ -6,7 +6,10 @@ namespace SubscriberWebApp
 {
     public sealed class MainHostedService : IHostedService
     {
-        MqttSubscriber _mqttSubscriber;
+        private MqttSubscriber _mqttSubscriber;
+        private Task _backgroundTask;
+        private CancellationTokenSource _cancellationTokenSource;
+
         public MainHostedService(MqttSubscriber mqttSubscriber)
         {
             _mqttSubscriber = mqttSubscriber;
@@ -14,12 +17,9 @@ namespace SubscriberWebApp
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            Console.WriteLine("[Mqtt Subscriber] start ");
-            _mqttSubscriber.Start();
-            while (true)
-            {
-                // doing nothing
-            }
+            _cancellationTokenSource = new CancellationTokenSource();
+            _backgroundTask = Task.Run(() => _mqttSubscriber.Start(_cancellationTokenSource.Token), cancellationToken);
+
             return Task.CompletedTask;
         }
 

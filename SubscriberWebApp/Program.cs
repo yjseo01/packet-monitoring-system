@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using SubscriberWebApp;
 using SubscriberWebApp.Components;
 
@@ -10,6 +11,9 @@ builder.Services.AddRazorComponents()
 // MainHostedService
 builder.Services.AddHostedService<MainHostedService>();
 builder.Services.AddSingleton<MqttSubscriber>();
+builder.Services.AddDbContext<ModbusDbContext>(options =>
+    options.UseSqlite("Data Source=modbus.db"));
+
 
 var app = builder.Build();
 
@@ -21,8 +25,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-// service 등록
 
 // pipe line
 

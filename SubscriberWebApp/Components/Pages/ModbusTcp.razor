@@ -1,0 +1,157 @@
+@page "/modbustcp"
+@inject ModbusDbContext ModbusDbContext
+
+@using SubscriberWebApp.Components.Models
+@using Microsoft.EntityFrameworkCore
+
+<h3>Modbus TCP Page</h3>
+
+
+<!-- 새로고침 버튼 -->
+<button class="refresh-button" @onclick="RefreshData">Refresh Data</button>
+
+<!-- Function Code 선택 드롭다운 리스트 -->
+<div>
+    <label for="functionCode">Function Code:</label>
+
+    <select @onchange="OnFunctionCodeSelected" class="form-select">
+        <option value="">Select Function Code</option>
+        @foreach (var code in Enum.GetValues(typeof(FunctionCode)).Cast<FunctionCode>())
+        {
+            <option value="@((int)code)">@(@code.ToString())</option>
+        }
+    </select>
+
+    <button class="btn btn-primary" @onclick="Submit">확인</button>
+</div>
+
+<!-- 테이블 출력 -->
+@if (modbusDataList != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Function Code</th>
+                <th>Payload Data</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in modbusDataList)
+            {
+                <tr>
+                    <td>@data.Id</td>
+                    <td>@data.FunctionCode</td>
+                    <td>@BitConverter.ToString(data.PayLoadData)</td>
+                    <td>@data.TimeStamp</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <button @onclick="PreviousPage" disabled="@isFirstPage">Previous</button>
+        <button @onclick="NextPage" disabled="@isLastPage">Next</button>
+    </div>
+}
+else
+{
+    <p>No data found or loading...</p>
+}
+
+@code {
+    private List<ModbusData>? modbusDataList;
+    private int? selectedFunctionCode = null;
+    private bool isConfirm = false;
+    private int currentPage = 1;
+    private int pageSize = 10;
+    private bool isFirstPage => currentPage == 1;
+    private bool isLastPage => modbusDataList != null && modbusDataList.Count < pageSize;
+
+    public enum FunctionCode
+    {
+        ReadCoils = 1,
+        ReadDiscreteInputs = 2,
+        ReadMultipleRegisters = 3,
+        ReadInputRegisters = 4,
+        WriteSingleCoil = 5,
+        WriteSingleRegister = 6,
+        WriteMultipleRegisters = 10,
+        WriteMultipleCoils = 15
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        isConfirm = false;
+        await LoadDataFromDatabase();
+    }
+
+    public async Task LoadDataFromDatabase()
+    {
+        try
+        {
+            var query = ModbusDbContext.ModbusData.AsQueryable();
+
+            if (selectedFunctionCode.HasValue)
+            {
+                query = query.Where(m => m.FunctionCode == selectedFunctionCode.Value);
+            }
+
+            modbusDataList = await query
+            .OrderBy(m => m.Id)
+            .Skip((currentPage - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    public async Task OnFunctionCodeSelected(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out var functionCode))
+        {
+            selectedFunctionCode = functionCode;
+            isConfirm = false;
+        }
+        else
+        {
+            selectedFunctionCode = null;
+        }
+    }
+
+    public async Task Submit()
+    {
+        if (selectedFunctionCode.HasValue)
+        {
+            isConfirm = true;
+            currentPage = 1;
+            await LoadDataFromDatabase();
+        }
+    }
+
+    public async Task PreviousPage()
+    {
+        if (currentPage > 1)
+        {
+            currentPage--;
+            await LoadDataFromDatabase();
+        }
+    }
+
+    public async Task NextPage()
+    {
+        if (!isLastPage)
+        {
+            currentPage++;
+            await LoadDataFromDatabase();
+        }
+    }
+
+    public async Task RefreshData()
+    {
+        await LoadDataFromDatabase();
+    }
+}
