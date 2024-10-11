@@ -31,7 +31,7 @@ This project captures ModbusTCP packets from a specified pcap file, filters and 
 - publisher에서 nic에서 패킷 캡쳐하는 기능 만들기 ---------------------------------------> ok (cancellation token 구현 필요)
 - publisher에서 pcap 파일 만들기
   
-- modbusTCP 서버/클라이언트 테스트 하는 테스트 코드 만들고 실행
+- modbusTCP 서버/클라이언트 테스트 하는 테스트 코드 만들고 실행 -------------------------> ok (크로스 컴파일 필요)
 - 위의 서버/클라이언트가 주고 받는 modbustcp 패킷 탐지하기
   
 - 이상현상 탐지하는 방법 알아보기
