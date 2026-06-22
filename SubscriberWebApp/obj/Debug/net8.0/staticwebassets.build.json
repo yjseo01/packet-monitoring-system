@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wBiKUPjvTzZM1OGdPPQ3KUp7uclzFCF8CxbWxLG0z7U=",
+  "Hash": "klBrujAlQgvqV7lMBy+Samb7S+oMBRngK+znrBgzap0=",
   "Source": "SubscriberWebApp",
   "BasePath": "_content/SubscriberWebApp",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "SubscriberWebApp\\wwwroot",
       "Source": "SubscriberWebApp",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\",
       "BasePath": "_content/SubscriberWebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "SubscriberWebApp.styles.css",
+      "RelativePath": "SubscriberWebApp#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,17 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "5b8e3xxaao",
+      "Integrity": "b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css"
+      "OriginalItemSpec": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css"
     },
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "SubscriberWebApp.bundle.scp.css",
+      "RelativePath": "SubscriberWebApp#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -50,85 +52,589 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "5b8e3xxaao",
+      "Integrity": "b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css"
+      "OriginalItemSpec": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css"
     },
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\app.css",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\app.css",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "app.css",
+      "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "bootstrap/bootstrap.min.css",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "bootstrap/bootstrap.min.css.map",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\favicon.png",
+      "Identity": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\favicon.png",
       "SourceId": "SubscriberWebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\",
       "BasePath": "_content/SubscriberWebApp",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "SubscriberWebApp.5b8e3xxaao.bundle.scp.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5b8e3xxaao"
+        },
+        {
+          "Name": "label",
+          "Value": "SubscriberWebApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk="
+        }
+      ]
+    },
+    {
+      "Route": "SubscriberWebApp.5b8e3xxaao.styles.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5b8e3xxaao"
+        },
+        {
+          "Name": "label",
+          "Value": "SubscriberWebApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk="
+        }
+      ]
+    },
+    {
+      "Route": "SubscriberWebApp.bundle.scp.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriberWebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk="
+        }
+      ]
+    },
+    {
+      "Route": "SubscriberWebApp.styles.css",
+      "AssetFile": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SubscriberWebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jun 2026 05:00:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0fgXYsQddqHMtGN+ZBAoJGZjDdcX5qsSZN/Ztzyljk="
+        }
+      ]
     }
   ]
 }

@@ -9,47 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SubscriberWebApp
 build_property.RootNamespace = SubscriberWebApp
-build_property.ProjectDir = c:\Users\seoyujin\Desktop\C#\project1\SubscriberWebApp\
+build_property.ProjectDir = D:\projects\pm-system-new\SubscriberWebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\seoyujin\Desktop\C#\project1\SubscriberWebApp
+build_property.MSBuildProjectDirectory = D:\projects\pm-system-new\SubscriberWebApp
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/App.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Pages/Counter.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Pages/Error.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Pages/Home.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Pages/Weather.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Pages/ModbusTcp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb2RidXNUY3AucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Routes.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/_Imports.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Layout/MainLayout.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-64x1ezq6d9
 
-[c:/Users/seoyujin/Desktop/C\#/project1/SubscriberWebApp/Components/Layout/NavMenu.razor]
+[D:/projects/pm-system-new/SubscriberWebApp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-uesos9to92

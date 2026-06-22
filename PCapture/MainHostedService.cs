@@ -19,6 +19,9 @@ namespace PCapture
         // MQTT publisher
         MqttPublisher _mqttPublisher;
 
+        private Task? _executingTask;
+        private CancellationTokenSource? _serviceCts;
+
         public MainHostedService(int devIdx, MqttPublisher mqttPublisher)
         {
             _devIdx = devIdx;
@@ -35,6 +38,10 @@ namespace PCapture
 
             // MQTT 시작
             _mqttPublisher.Start();
+
+            _serviceCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            _executingTask = WatchLoopAsync(_serviceCts.Token);
+
         }
 
         private void device_OnPacketArrival(object sender, PacketCapture e)
@@ -50,14 +57,48 @@ namespace PCapture
             _mqttPublisher.PublishMqttMessage(); // 인스턴스 필드 사용
         }
 
+        private async Task WatchLoopAsync(CancellationToken cancellationToken)
+        {
+            try
+            {
+                while (!cancellationToken.IsCancellationRequested)
+                {
+                    // 100ms마다 체크하며 대기 (CPU 점유율 폭발 방지)
+                    await Task.Delay(100, cancellationToken);
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                // 취소 신호에 의해 Task가 종료될 때 발생하는 정상이벤트이므로 무시
+                Console.WriteLine("[PCapture] 대기 루프가 안전하게 정지되었습니다.");
+            }
+        }        
+
         public async Task StopAsync(CancellationToken cancellationToken)
         {
             if (_device is not null)
             {
-                _device.StopCapture();
-                _device.OnPacketArrival -= device_OnPacketArrival;
+                // _device.StopCapture();
+                // _device.OnPacketArrival -= device_OnPacketArrival;
 
-                _mqttPublisher.Stop();
+                // _mqttPublisher.Stop();
+
+                try
+                {
+                    _device.StopCapture();
+                    _device.OnPacketArrival -= device_OnPacketArrival;
+                    _device.Close();
+
+                    _mqttPublisher.Stop();
+                }
+                catch (Exception ex)
+                
+                {
+                    Console.WriteLine($"장치 정리 중 오류 발생: {ex.Message}");
+                }
+
+                Console.WriteLine("[PCapture] 모든 자원이 정리되었습니다.");
+
             }
         }
     }

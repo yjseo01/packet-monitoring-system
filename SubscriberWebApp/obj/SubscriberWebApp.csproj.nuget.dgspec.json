@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\SubscriberWebApp.csproj": {}
+    "D:\\projects\\pm-system-new\\SubscriberWebApp\\SubscriberWebApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\SubscriberWebApp.csproj": {
+    "D:\\projects\\pm-system-new\\SubscriberWebApp\\SubscriberWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\SubscriberWebApp.csproj",
+        "projectUniqueName": "D:\\projects\\pm-system-new\\SubscriberWebApp\\SubscriberWebApp.csproj",
         "projectName": "SubscriberWebApp",
-        "projectPath": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\SubscriberWebApp.csproj",
-        "packagesPath": "C:\\Users\\seoyujin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\seoyujin\\Desktop\\C#\\project1\\SubscriberWebApp\\obj\\",
+        "projectPath": "D:\\projects\\pm-system-new\\SubscriberWebApp\\SubscriberWebApp.csproj",
+        "packagesPath": "C:\\Users\\yujin\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\pm-system-new\\SubscriberWebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\seoyujin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yujin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -46,6 +53,16 @@
             "MQTTnet": {
               "target": "Package",
               "version": "[4.3.7.1207, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -67,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -17,6 +17,13 @@ builder.Services.AddDbContext<ModbusDbContext>(options =>
 
 var app = builder.Build();
 
+// create DB if it does not exist
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ModbusDbContext>();
+    dbContext.Database.EnsureCreated();
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
