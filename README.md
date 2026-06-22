@@ -39,6 +39,33 @@ This project captures ModbusTCP packets from a specified pcap file, filters and 
 - signalR 이용해서 대시보드 만들기
 - subscriberwebapp에 blazorize 이용해서 분석 차트 띄우기
 - mqtt 패킷 암호화해서 보내기
-- 로그인 구현하기
 - modbustcp 말고도 다양한 프로토콜 추가하기
 
+[리눅스 서버: Modbus 장비]
+       │
+       │ (Modbus TCP 통신 발생 / Port 502)
+       ▼
+[윈도우 PC: 내 랜카드(NIC)]
+       │
+       ▼ ① 패킷 스니핑 (PacketDotNet / Npcap)
+┌──────────────────────────────────────────────┐
+│ 1. PCapture (C# 콘솔 앱 / Publisher)          │
+│    - 흘러가는 ModbusTCP raw 패킷을 낚아챔     │
+│    - 필요한 데이터(Function Code 등)만 가공    │
+└──────────────────────────────────────────────┘
+       │
+       ▼ ② MQTT Publish (JSON 데이터 던지기)
+┌──────────────────────────────────────────────┐
+│ 2. MQTT Broker (리눅스 Docker 컨테이너)       │
+│    - 데이터를 받아서 전달해줌                 │
+└──────────────────────────────────────────────┘
+       │
+       ▼ ③ MQTT Subscribe (실시간 데이터 구독)
+┌──────────────────────────────────────────────┐
+│ 3. SubscriberWebApp (C# Blazor / 웹앱)       │
+│    - 브로커가 던져준 데이터를 실시간으로 받음  │
+│    - SQLite DB에 차곡차곡 저장               │
+│    - SignalR을 통해 웹 브라우저 화면으로 전송 │
+└──────────────────────────────────────────────┘
+       │
+       ▼ ④ UI 업데이트
