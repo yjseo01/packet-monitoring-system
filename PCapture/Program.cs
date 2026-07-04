@@ -24,7 +24,7 @@ for (int i = 0; i < devices.Count; i++)
 // 사용자가 장치 선택하게 하기
 int devIdx = -1;
 Console.WriteLine($"장치를 선택하세요(0 ~ {devices.Count - 1}): ");
-string input = Console.ReadLine();
+string? input = Console.ReadLine();
 
 if (int.TryParse(input, out devIdx) && (devIdx < 0 || devIdx >= devices.Count))
 {
@@ -38,10 +38,8 @@ Console.WriteLine($"선택한 장치: {device.Name}|{device.Description}");
 var builder = Host.CreateDefaultBuilder(args); // 호스트 빌더 생성
 builder.ConfigureServices((hostConext, services) =>
 {
-    // MainHostedService 클래스를 호스트의 서비스로 등록
-    //services.AddHostedService(sp => new MainHostedService(devIdx));
     services.AddSingleton<MqttPublisher>();
-    services.AddSingleton<MainHostedService>(sp => new MainHostedService(devIdx, sp.GetRequiredService<MqttPublisher>()));
+    services.AddHostedService(sp => new MainHostedService(devIdx, sp.GetRequiredService<MqttPublisher>()));
 });
 
 await builder.RunConsoleAsync();

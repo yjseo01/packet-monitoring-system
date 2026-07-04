@@ -1,8 +1,14 @@
-﻿@page "/"
-@inject NavigationManager NavigationManager
+@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Packet Monitoring</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Packet Monitoring System</h1>
 
-Welcome to your new app.
+<p>
+    Captured packets are published by <code>PCapture</code>, stored by <code>SubscriberWebApp</code>,
+    and reviewed on the Modbus TCP page.
+</p>
+
+<div class="d-flex gap-2">
+    <a class="btn btn-primary" href="modbustcp">Open Modbus TCP View</a>
+</div>

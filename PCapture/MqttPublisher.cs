@@ -1,47 +1,73 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.VisualBasic;
 using MQTTnet;
 using MQTTnet.Client;
-using MQTTnet.Packets;
-using MQTTnet.Protocol;
 
 namespace PCapture
 {
     public class MqttPublisher
     {
-        MqttFactory? _mqttFactory;
-        IMqttClient? _mqttClient;
-        MqttClientOptions? _mqttClientOptions;
+        private MqttFactory? _mqttFactory;
+        private IMqttClient? _mqttClient;
+        private MqttClientOptions? _mqttClientOptions;
+        private bool _stopRequested;
 
-
-        public async void Start()
+        public async Task StartAsync()
         {
             _mqttFactory = new MqttFactory();
             _mqttClient = _mqttFactory.CreateMqttClient();
+            var mqttClient = _mqttClient;
             _mqttClientOptions = new MqttClientOptionsBuilder()
+                .WithClientId("PCapture")
                 .WithTcpServer("localhost")
                 .Build();
 
-            await _mqttClient.ConnectAsync(_mqttClientOptions, CancellationToken.None);
+            _stopRequested = false;
+
+            while (!_stopRequested && (_mqttClient is null || !_mqttClient.IsConnected))
+            {
+                try
+                {
+                    await mqttClient.ConnectAsync(_mqttClientOptions, CancellationToken.None);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[MQTT] connect failed: {ex.Message}");
+                    await Task.Delay(1000);
+                }
+            }
         }
 
         public void Stop()
         {
+            _stopRequested = true;
+
+            if (_mqttClient is not null && _mqttClient.IsConnected)
+            {
+                _mqttClient.DisconnectAsync().GetAwaiter().GetResult();
+            }
+
             _mqttFactory = null;
             _mqttClient = null;
             _mqttClientOptions = null;
         }
 
-        public async void PublishMqttMessage()
+        public async Task PublishMqttMessageAsync(string topic, string payload)
         {
             var applicationMessage = new MqttApplicationMessageBuilder()
-                .WithTopic("network/packets")
+                .WithTopic(topic)
+                .WithPayload(payload)
                 .Build();
 
-            _mqttClient.PublishAsync(applicationMessage, CancellationToken.None);
-            Console.WriteLine("[MQTT] Mqtt Message published!");
+            if (_mqttClient is null || !_mqttClient.IsConnected)
+            {
+                Console.WriteLine("[MQTT] client is not connected");
+                return;
+            }
+
+            await _mqttClient.PublishAsync(applicationMessage, CancellationToken.None);
+            Console.WriteLine($"[MQTT] published {topic}: {payload}");
         }
     }
 
